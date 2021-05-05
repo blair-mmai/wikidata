@@ -1,2 +1,4 @@
-# wikidata
-Wikidata API experiments
+## Wikidata API
+
+Some mini experiments with Wikidata APIs.
+
