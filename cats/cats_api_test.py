@@ -45,9 +45,8 @@ df = pd.DataFrame(cats)
 # df.set_index('kitty_name', inplace=True)
 
 # Show a sampling of our cats from our dataframe.
-print("\nSample of first few cats...")
-df['kitty_lowercase'] = df['kitty_name'].str.lower()
-print(df.loc[df['kitty_lowercase'].str.contains("sock"),['kitty_url','kitty_name']].head(5))
+print("\nSample of first five cats...")
+print(df.head(5))
 
 # Just showing how pandas syntax works for filtering rows and selecting columns.
 print("\nCats with 'sock' in their name")
