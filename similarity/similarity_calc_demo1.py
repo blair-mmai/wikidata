@@ -2,11 +2,33 @@
 from scipy import spatial   # use for computing similarity of vectors
 import math                 # to calculate angle (in degrees) from the similarity metric.
 
+#################################################################################
+# Module name: similarity_calc_demo1
+#################################################################################
+# Description:
+#   This basic module will show how to calculate angles between vectors and
+#   examines the results.  I include two orthogonal (right-angled) vectors and
+#   two very similar vectors to show results.
+#
+#   I'll create some vectors that happen to be of dimension n = 6  (each vector
+#   consists of 6 real numbers).  Then, I'll compute angles between pairs.  We
+#   evaluate those angles to find the vectors "most like one of the others."
+#
+#   If a user says he likes "Elvis's Blue Suede Shoes" and wants more songs like
+#   that, then we will find vectors close to "Blue Suede Shoes" to answer that question.
+
+#   Note: I could write a similarity function of my own that computes cosine
+#   similarity (qv wikipedia) - or even other TYPES of similarity or my OWN
+#   custom type of similarity -- but why bother.  It's a simple calculation
+#   so I import one from scipy library.
+#
+##################################################################################
+
 nbr_dimensions_of_each_vector = 6
 
 vector1 = [1.1,0,-3,4.23,-5,6]
 vector2 = [-6,4.2,3.33,-2,7,0]
-# vector3 = [9,-9,-9]         # note: the dimensionality of vectors must be same (eg all 6, all 3, or all 1000)
+# vector3 = [9,-9,-9]         # not okay.  note: the dimensionality of vectors must be same (eg all 6, all 3, or all 1000)
 vector3 = [3,-4,-0.9,7,0,4]   # this is fine.
 
 # these two vectors are 90 degrees to one another (note how they dont share any dimensional values)
