@@ -1,3 +1,7 @@
-
+# cats folder
 cats/.idea/*
 cats/.env/*
+
+# similarity folder
+similarity/.idea/*
+similarity/.env/*
